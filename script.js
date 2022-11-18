@@ -48,7 +48,7 @@ function showBooks() {
         myLibrary = [];
     else
         myLibrary = JSON.parse(books);
-    let html = '';
+    let html = '<div class ="empty-box"> </div>';
     myLibrary.forEach(function (book, index) {
         html += `
         <div class="card">

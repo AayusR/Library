@@ -112,15 +112,15 @@ input{
     
 }
 
-#main-content h1{
-    padding: 10px;
-}
-
 #card-container{
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
     grid-template-rows:auto 1fr 1fr;
     gap: 20px;
+}
+
+#card-container .empty-box{
+    grid-column: 1/-1;
 }
 
 .card{
