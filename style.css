@@ -34,10 +34,8 @@ main{
     justify-content: center;
     font-family: 'Roboto',sans-serif;
     position: absolute;
-    top: 0;    
-    /* transform:translate(-50%,-50%); */
+    top: 0;
     text-align: center;
-    /* background-color: ; */
 }
 
 form{
@@ -111,14 +109,18 @@ input{
 #main-content{
     text-align: center;
     padding: 10px 20px 40px 20px;
+    
+}
+
+#main-content h1{
+    padding: 10px;
+}
+
+#card-container{
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
     grid-template-rows:auto 1fr 1fr;
     gap: 20px;
-}
-
-#main-content h1{
-    grid-column: 1/-1;
 }
 
 .card{

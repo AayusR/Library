@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Library</h1>
@@ -15,48 +17,34 @@
     <main>
         <div id="main-content">
             <h1>Your Books</h1>
-            <div class="card">
-                <p>Title</p>
-                <p>Author</p>
-                <p>234 pages</p>
-                <button class="update btn" data-status="read">Read</button>
-                <button class="remove btn">Remove</button>
+            <div id="card-container"></div>
+
+            <div class="btn-container">
+                <button class="add-btn"><img src="plus-circle.png" alt="add"></button>
             </div>
-            <div class="card">
-                <p>Title</p>
-                <p>Author</p>
-                <p>234 pages</p>
-                <button class="update btn" data-status="not-read">Not Read</button>
-                <button class="remove btn">Remove</button>
-            </div>
-            
-            
-           
-            
-           
-        <div class="btn-container">
-            <button class="add-btn"><img src="plus-circle.png" alt="add"></button>
-       </div> 
+
     </main>
     <div class="form">
-     <form action="/">
-        <legend>Add New Book</legend>
+        <form>
+            <legend>Add New Book</legend>
 
-        <input type="text" name="title" id="title" placeholder="Title" required>
-        <input type="text" name="author" id="author" placeholder="Author" required>
-        <input type="number" name="pages" id="pages" placeholder="Pages" min="0" required>
+            <input type="text" name="title" id="title" placeholder="Title" required>
+            <input type="text" name="author" id="author" placeholder="Author" required>
+            <input type="number" name="pages" id="pages" placeholder="Pages" min="0" required>
 
-        <div class="status-container">
-            <label>Have you read it?</label>
-            <input type="radio" name="status" id="yes" value="yes" required>
-            <label for="yes">Yes</label>
-            
-            <input type="radio" name="status" id="no" value="no">
-            <label for="no">No</label>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-        <button type="button" class="close-btn">Close</button>
-     </form>
+            <div class="status-container">
+                <label>Have you read it?</label>
+                <input type="radio" name="status" id="yes" value="yes" required>
+                <label for="yes">Yes</label>
+
+                <input type="radio" name="status" id="no" value="no">
+                <label for="no">No</label>
+
+
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="button" class="close-btn">Close</button>
+        </form>
     </div>
 </body>
 </html>
