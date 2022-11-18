@@ -76,6 +76,7 @@ function removeBook(index){
     myLibrary.splice(index,1)
     localStorage.setItem('books', JSON.stringify(myLibrary));
     showBooks(); 
+    document.location.reload();
 }
 
 function changeStatus(index){
