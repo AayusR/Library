@@ -102,6 +102,10 @@ addButton.addEventListener('click', () => {
     formContainer.style.display = 'flex';
 })
 
+closeButton.addEventListener('click',()=>{
+    formContainer.style.display = 'none';
+})
+
 form.addEventListener('submit', () => {
     addBookToLibrary();
     formContainer.style.display = 'none';
